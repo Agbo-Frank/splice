@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Söhne-Breit';
+  src: url('./asset/fonts/soehne-breit-kraftig.ttf'); /* IE9 Compat Modes  */
+  src: url('./asset/fonts/soehne-breit-kraftig.ttf') format('embedded-opentype'), /* IE6-IE8  */
+       url('./asset/fonts/soehne-breit-kraftig.ttf') format('woff2'), Super Modern Browsers
+       url('./asset/fonts/soehne-breit-kraftig.ttf') format('woff'), /* Pretty Modern Browsers  */
+       url('./asset/fonts/soehne-breit-kraftig.ttf')  format('truetype'), /* Safari, Android, iOS  */
+       url('./asset/fonts/soehne-breit-kraftig.ttf') format('svg'); /* Legacy iOS  */
+}
+
+@font-face {
+  font-family: 'Söhne-Breit';
+  src: url('./asset/fonts/soehne-breit-kraftig.ttf') format('woff2'),
+       url('./asset/fonts/soehne-breit-kraftig.ttf') format('woff'),
+}
+  
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all .2s linear; 
+  font-family: 'Söhne-Breit', sans-serif;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.hero_text {
+  font-size: 5.5vw;
+  line-height: 85px;
+  font-weight: bolder;
+  background-image: url(./asset/images/text_background_image.png);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+section.hero::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 95%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #F4F6F9;
+  border-radius: 0 0 50% 50%/0 0 100% 100%;
+  transform: scaleX(1.5);
+}
