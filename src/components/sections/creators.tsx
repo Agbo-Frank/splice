@@ -43,36 +43,41 @@ export default function Creator(){
         }
     ]
     return(
-        <section className="py-10 bg-[#0C0C0C]  relative mt-40">
-            <div className=" px-14 flex items-center min-h-[800px] justify-between">
-                <div className="w-[35%]">
-                    <p className="uppercase">studio</p>
-                    <p className="text-[white] font-bold tex text-[48px]">What <span className="text-primary">creators</span> are saying about Splice</p>
-                    <p className="text-[#958A8A] my-3 text-[18px]">Try industry-leading music software for free, pay it off over time and own it forever.</p>
-                    <Button title="try studio" />
-                </div>
-                <div className="space-y-10 z-30 -translate-x-8">
-                    <div className="flex space-x-7">
-                        <Comment Img={User1Image} />
-                        <Comment Img={User2Image} />
+        <div className="relative">
+            <section className="creator">
+                <div className="pt-10 relative mt-40">
+                    <div className=" px-14 flex items-center min-h-[800px] justify-between">
+                        <div className="w-[35%]">
+                            <p className="uppercase text-[#606060] opacity-50">studio</p>
+                            <p className="text-[white] font-bold tex text-[48px]">What <span className="text-primary">creators</span> are saying about Splice</p>
+                            <p className="text-[#958A8A] my-3 text-[18px]">Try industry-leading music software for free, pay it off over time and own it forever.</p>
+                            <Button title="try studio" />
+                        </div>
+                        <div className="space-y-10 z-30 -translate-x-8">
+                            <div className="flex space-x-7">
+                                <Comment Img={User1Image} />
+                                <Comment Img={User2Image} />
+                            </div>
+                            <div className="flex space-x-7 translate-x-12">
+                                <Comment Img={User1Image} />
+                                <Comment Img={User2Image} />
+                            </div>
+                        </div>
+                        <img src={Word} className="max-w-[800px] absolute -top-32 right-0" />
+                        
                     </div>
-                    <div className="flex space-x-7 translate-x-12">
-                        <Comment Img={User1Image} />
-                        <Comment Img={User2Image} />
+                    <div className="spiral my-16">
+                        <p className="text-[white] my-16 text-[36px] text-center">As good as it sounds</p>
+                        <div className="flex justify-between mb-40">
+                            {features.map((feature, i) => <Feature  feature={feature}/>)}
+                        </div>
+                    </div>
+                    <div className="jobs">
+                        <p className="text-center leading-9 text-[36px] text-white w-1/2 font-extrabold">Come change the way people make music</p>
+                        <button className="border text-xs border-white rounded-full my-5 py-2 px-12 uppercase text-white">jobs at splice</button>
                     </div>
                 </div>
-                <img src={Word} className="max-w-[800px] absolute -top-32 right-0" />
-                
-            </div>
-            <div className="spiral my-24">
-                <p className="text-[white] my-24 text-[36px] text-center">As good as it sounds</p>
-                <div className="flex justify-between mb-40">
-                    {
-                        features.map((feature, i) => <Feature  feature={feature}/>)
-                    }
-                </div>
-                
-            </div>
-        </section>
+            </section>
+        </div>
     )
 }

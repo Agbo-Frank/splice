@@ -1,5 +1,6 @@
 import Companies from "./components/sections/companies";
 import Creator from "./components/sections/creators";
+import Footer from "./components/sections/footer";
 import Hero from "./components/sections/hero";
 import Plugin from "./components/sections/plugins";
 import Sounds from "./components/sections/sounds";
@@ -14,6 +15,7 @@ function App() {
       <Plugin />
       <Studio />
       <Creator />
+      <Footer />
     </div>
   );
 }
