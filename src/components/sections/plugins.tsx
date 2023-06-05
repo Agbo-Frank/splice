@@ -5,9 +5,9 @@ import StudioImage2 from "../../asset/images/studio_image2.svg"
 export default function Plugin(){
     return(
         <div className="relative">
-            <section className="px-6 md:px-14 plugin my-10 pt-[80px] xs:pt-[150px] sm:pt-[230px] md:pt-[300px] lg:pt-[420px] py-10 relative mt-[300px]">
+            <section className="screen-padding plugin my-10 pt-[80px] xs:pt-[150px] sm:pt-[230px] md:pt-[300px] lg:pt-[420px] py-10 relative mt-[300px]">
                 <img src={StudioImage2} className="absolute left-1/2 -translate-x-1/2 -top-[250px]" />
-                <div className="flex flex-col-reverse gap-20 lg:gap-0  lg:flex-row  relative items-center justify-between z-30">
+                <div className="flex flex-col-reverse gap-20 lg:gap-0 mt-5 md:mt-0 lg:flex-row  relative items-center justify-between z-30">
                     <img src={PluginImage} className="" />
                     <div className="w-full lg:w-[35%] ">
                         <p className="uppercase text-[#606060] font-bold opacity-50">plugins</p>

@@ -46,7 +46,7 @@ export default function Footer(){
         }
     ]
     return(
-        <footer className="px-6 md:px-14 mt-48 mb-20 flex flex-col md:flex-row justify-between space-y-10 md:space-y-0 md:space-x-5">
+        <footer className="screen-padding mt-48 mb-20 flex flex-col md:flex-row justify-between space-y-10 md:space-y-0 md:space-x-5">
             <div className="flex md:block flex-col justify-between items-center space-y-2 md:w-[20%]">
                 <Logo />
                 <p className="text-[#606060] text-[11px] text-center md:text-left">2021 Splice.com All Rights Reserved</p>

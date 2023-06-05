@@ -10,7 +10,7 @@ export default function Header(){
     const auth_navs = ["log in", "sign up"]
     return(
         <>
-            <div className={`${open_menu && "fixed"} z-50 top-0 right-0 left-0 flex justify-between text-xs font-light items-center uppercase px-6 md:px-14 py-5 w-full`}>
+            <div className={`${open_menu && "fixed"} z-50 top-0 right-0 left-0 flex justify-between text-xs font-light items-center uppercase px-3 sm:px-6 md:px-14 py-5 w-full`}>
                 <div className="flex items-center space-x-14">
                     <Logo />
                     

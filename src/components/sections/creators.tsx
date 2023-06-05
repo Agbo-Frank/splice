@@ -82,7 +82,7 @@ export default function Creator(){
         <div className="relative">
             <section className="creator">
                 <div className="pt-10 relative mt-40">
-                    <div className="px-6 md:px-14 flex flex-col lg:flex-row items-center min-h-[800px] space-y-16 lg:space-y-0 lg:justify-between">
+                    <div className="screen-padding flex flex-col lg:flex-row items-center min-h-[800px] space-y-16 lg:space-y-0 lg:justify-between">
                         <div className="w-full lg:w-[35%] z-30">
                             <p className="text-[white] font-extrabold text-[38px] leading-[55px] md:text-[48px]">What <span className="text-primary">creators</span> are saying about Splice</p>
                             <p className="text-[#958A8A] font-light my-5 text-[18px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue tellus urna, mi velit diam. Turpis diam amet massa id.</p>
