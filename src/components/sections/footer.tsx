@@ -47,16 +47,16 @@ export default function Footer(){
     ]
     return(
         <footer className="px-6 md:px-14 mt-48 mb-20 flex flex-col md:flex-row justify-between space-y-10 md:space-y-0 md:space-x-5">
-            <div className="space-y-2 md:w-[20%]">
+            <div className="flex md:block flex-col justify-between items-center space-y-2 md:w-[20%]">
                 <Logo />
-                <p className="text-[#606060] text-[11px]">2021 Splice.com All Rights Reserved</p>
+                <p className="text-[#606060] text-[11px] text-center md:text-left">2021 Splice.com All Rights Reserved</p>
             </div>
             <div className="md:w-[55%] grid grid-cols-3 gap-10">
                 {
                     footer_list.map((item, index) => <FooterList {...item} />)
                 }
             </div>
-            <div className="md:w-[23%]">
+            <div className="md:w-[23%] flex md:block flex-col items-center">
                 <h1 className="text-[#0C0C0C] uppercase text-[15px]">find us on social</h1>
                 <ul className="flex space-x-5 my-4">
                     {

@@ -8,7 +8,7 @@ import Studio from "./components/sections/studio";
 
 function App() {
   return (
-    <div className="w-screen overflow-x-hidden">
+    <div className="max-w-[1280px] w-screen overflow-x-hidden">
       <Hero />
       <Companies />
       <Sounds />
