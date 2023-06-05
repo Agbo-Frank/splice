@@ -51,7 +51,7 @@ export default function Footer(){
                 <Logo />
                 <p className="text-[#606060] text-[11px] text-center md:text-left">2021 Splice.com All Rights Reserved</p>
             </div>
-            <div className="md:w-[55%] grid grid-cols-3 gap-10">
+            <div className="md:w-[55%] grid grid-cols-3 gap-5 md:gap-10">
                 {
                     footer_list.map((item, index) => <FooterList {...item} key={index} />)
                 }
