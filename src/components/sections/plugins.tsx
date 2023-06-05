@@ -10,9 +10,9 @@ export default function Plugin(){
                 <div className="flex flex-col-reverse gap-20 lg:gap-0  lg:flex-row  relative items-center justify-between z-30">
                     <img src={PluginImage} className="" />
                     <div className="w-full lg:w-[35%] ">
-                        <p className="uppercase text-[#606060] opacity-50">plugins</p>
-                        <p className="text-[#272727] font-bold tex text-[48px]">Build your <span className="text-primary">digital studio</span></p>
-                        <p className="text-[#958A8A] my-3 text-[18px]">Try industry-leading music software for free, pay it off over time and own it forever.</p>
+                        <p className="uppercase text-[#606060] font-bold opacity-50">plugins</p>
+                        <p className="text-[#272727] text-[38px] font-extrabold md:text-[48px] leading-[55px]">Build your <span className="text-primary">digital studio</span></p>
+                        <p className="text-[#958A8A] my-5 text-[18px] font-light">Try industry-leading music software for free, pay it off over time and own it forever.</p>
                         <Button title="try gear" />
                     </div>
                 </div>

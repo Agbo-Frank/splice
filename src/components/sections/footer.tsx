@@ -7,7 +7,7 @@ import Youtube from "../../asset/images/youtube.svg"
 function FooterList({title, list}: {title: string, list: string[]}){
     return(
         <ul>
-            <li className="uppercase mb-4">{title}</li>
+            <li className="uppercase mb-4 font-semibold">{title}</li>
             {
                 list.map((item, index) => (
                     <li className="text-[#606060] text-[13px] mb-3 capitalize" key={index}>{item}</li>
@@ -53,7 +53,7 @@ export default function Footer(){
             </div>
             <div className="md:w-[55%] grid grid-cols-3 gap-10">
                 {
-                    footer_list.map((item, index) => <FooterList {...item} />)
+                    footer_list.map((item, index) => <FooterList {...item} key={index} />)
                 }
             </div>
             <div className="md:w-[23%] flex md:block flex-col items-center">
@@ -66,7 +66,7 @@ export default function Footer(){
                 <ul className="flex flex-wrap capitalize text-xs text-[#606060]">
                     {
                         ["terms of use", "privacy policy", "jobs", "contact", "help"].map(item => (
-                            <li className="mr-8" key={item}>{item}</li>
+                            <li className="mr-8 font-light" key={item}>{item}</li>
                         ))
                     }
                 </ul>

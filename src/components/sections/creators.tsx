@@ -84,20 +84,21 @@ export default function Creator(){
                 <div className="pt-10 relative mt-40">
                     <div className="px-6 md:px-14 flex flex-col lg:flex-row items-center min-h-[800px] space-y-16 lg:space-y-0 lg:justify-between">
                         <div className="w-full lg:w-[35%] z-30">
-                            <p className="text-[white] font-bold tex text-[48px]">What <span className="text-primary">creators</span> are saying about Splice</p>
-                            <p className="text-[#958A8A] my-3 text-[18px]">Try industry-leading music software for free, pay it off over time and own it forever.</p>
+                            <p className="text-[white] font-extrabold text-[38px] leading-[55px] md:text-[48px]">What <span className="text-primary">creators</span> are saying about Splice</p>
+                            <p className="text-[#958A8A] font-light my-5 text-[18px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue tellus urna, mi velit diam. Turpis diam amet massa id.</p>
                             <Button title="try studio" />
                         </div>
                         <div className="md:hidden block z-30">
                             {
                                 feedbacks.map((item, index) => (
-                                    <Comment show={current_index2 === index} data={item} key={index} />
+                                    <Comment key={index} show={current_index2 === index} data={item} />
                                 ))
                             }
                             <div className="flex justify-center items-center space-x-3 my-[20px]">
                                 {
                                     feedbacks.map((_, index)=> (
                                         <div 
+                                            key={index}
                                             className={`w-[10px] cursor-pointer h-[10px] border border-primary rounded-full ${index === current_index2 && "bg-primary" }`}
                                             onClick={() => setCurrentIndex2(index)}
                                         ></div>
@@ -126,13 +127,14 @@ export default function Creator(){
                         
                     </div>
                     <div className="spiral py-[50px] px-6 md:px-14 my-16">
-                        <p className="text-[white] my-[20px] md:my-[30px] text-[36px] text-center">As good as it sounds</p>
+                        <p className="text-[white] my-[20px] md:my-[30px] font-bold text-[36px] text-center">As good as it sounds</p>
                         <div className="lg:hidden mx-auto w-fit mb-20 md:mb-40">
-                            {features.map((feature, i) => <Feature show={current_index === i} feature={feature}/>)}
+                            {features.map((feature, i) => <Feature key={i} show={current_index === i} feature={feature}/>)}
                             <div className="flex justify-center items-center space-x-3 my-[20px]">
                                 {
                                     features.map((_, index)=> (
                                         <div 
+                                            key={index}
                                             className={`w-[10px] cursor-pointer h-[10px] border border-[#A659FF] rounded-full ${index === current_index && "linear-gradient" }`}
                                             onClick={() => setCurrentIndex(index)}
                                         ></div>
@@ -141,12 +143,12 @@ export default function Creator(){
                             </div>
                         </div>
                         <div className="hidden lg:flex space-x-8 justify-between mb-40">
-                            {features.map((feature, i) => <Feature show feature={feature}/>)}
+                            {features.map((feature, i) => <Feature key={i} show feature={feature}/>)}
                         </div>
                     </div>
-                    <div className="jobs rounded-lg w-full :rounded-[22px]">
-                        <p className="text-center md:leading-9 text-[20px] py-[13px] md:py-[20px] md:text-[36px] text-white md:w-1/2 font-medium md:font-extrabold">Come change the way people make music</p>
-                        <button className="border text-xs border-white rounded-full my-2 md:my-5 py-2 px-12 uppercase text-white">jobs at splice</button>
+                    <div className="jobs rounded-lg w-full md:rounded-[22px]">
+                        <p className="text-center md:leading-9 text-[20px] py-[13px] md:py-[20px] md:text-[36px] text-white sm:w-1/2 font-bold">Come change the way people make music</p>
+                        <button className="border text-xs border-white rounded-full my-2 md:my-5 py-2 px-12 uppercase font-light text-white">jobs at splice</button>
                     </div>
                 </div>
             </section>

@@ -1,13 +1,50 @@
 @font-face {
   font-family: 'Söhne-Breit';
-  src: url('./asset/fonts/soehne-breit-kraftig.ttf'); /* IE9 Compat Modes  */
-  src: url('./asset/fonts/soehne-breit-kraftig.ttf') format('embedded-opentype'), /* IE6-IE8  */
-       url('./asset/fonts/soehne-breit-kraftig.ttf') format('woff2'), /* Super Modern Browsers */
-       url('./asset/fonts/soehne-breit-kraftig.ttf') format('woff'), /* Pretty Modern Browsers  */
-       url('./asset/fonts/soehne-breit-kraftig.ttf')  format('truetype'), /* Safari, Android, iOS  */
-       url('./asset/fonts/soehne-breit-kraftig.ttf') format('svg'); /* Legacy iOS  */
+  src: url("./asset/fonts/test-soehne-breit-extraleicht.woff2");
+  font-weight: 100;
 }
-  
+
+@font-face {
+  font-family: 'Söhne-Breit';
+  src: url("./asset/fonts/test-soehne-breit-leicht.woff2");
+  font-weight: 300
+}
+
+@font-face {
+  font-family: 'Söhne-Breit';
+  src: url("./asset/fonts/test-soehne-breit-buch.woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Söhne-Breit';
+  src: url("./asset/fonts/test-soehne-breit-kraftig.woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Söhne-Breit';
+  src: url("./asset/fonts/test-soehne-breit-halbfett.woff2");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Söhne-Breit';
+  src: url("./asset/fonts/test-soehne-breit-dreiviertelfett.woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Söhne-Breit';
+  src: url("./asset/fonts/test-soehne-breit-fett.woff2");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Söhne-Breit';
+  src: url("./asset/fonts/test-soehne-breit-extrafett.woff2");
+  font-weight: 900;
+}
 
 @tailwind base;
 @tailwind components;
@@ -25,7 +62,6 @@
 }
 
 .hero_text {
-  font-weight: bolder;
   background-image: url(./asset/images/text_background_image.png);
   background-size: cover;
   background-clip: text;

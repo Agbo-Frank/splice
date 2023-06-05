@@ -5,8 +5,8 @@ export default function Comment({data, show}: {data: {img: any, name: string, co
             <div className="flex items-center space-x-2 mt-2">
                 <img className="w-[40px] h-[40px] rounded-full" src={data.img} />
                 <div>
-                    <p className="text-[11px]">{data.name}</p>
-                    <p className="text-[8px]">Artist</p>
+                    <p className="text-[11px] font-light">{data.name}</p>
+                    <p className="text-[8px] font-thin">Artist</p>
                 </div>
             </div>
         </div>
